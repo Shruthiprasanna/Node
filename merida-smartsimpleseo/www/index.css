@@ -1,0 +1,26 @@
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    font-size: 1em;
+    width:90%;
+    margin:0 auto;
+    line-height: 1.5em;
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160, 160, 160);
+    text-align: center;
+  }
+  
+  thead {
+    background-color: #d2eaff;
+  }
+
+  #Result figure {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    font-size: 1em;
+    padding-top: 1em;
+  }
