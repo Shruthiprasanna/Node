@@ -5,8 +5,7 @@ document.getElementById("compare").addEventListener("click",function(evt){
     let sCompetitor1URL= document.getElementById("enterCompetitor1URL").value || null;
     let sCompetitor2URL= document.getElementById("enterCompetitor2URL").value || null;
     let sKeyword = document.getElementById("enterKeyword").value || null;
-    let sSearch = document.getElementById("enterKeyword").value + "+" + document.getElementById("enterLocation").value|| null;
-    let sURL = "/compare/?clientURL=" + sClientURL + "&competitor1URL=" + sCompetitor1URL + "&competitor2URL=" + sCompetitor2URL +"&keyword=" + sSearch + "&operation=COMPARE_GOOGLE";
+    let sURL = "/compare/?clientURL=" + sClientURL + "&competitor1URL=" + sCompetitor1URL + "&competitor2URL=" + sCompetitor2URL +"&keyword=" + sKeyword;
 
     fetch(sURL)
     .then(function(response){
@@ -22,8 +21,8 @@ document.getElementById("compare").addEventListener("click",function(evt){
       )
       .then(function(data) {
         
-        //var jsonResult = JSON.parse(data);
-        this.CreateTableFromJSON(data);
+        var jsonResult = JSON.parse(data);
+        this.CreateTableFromJSON(jsonResult);
 
         }
         )

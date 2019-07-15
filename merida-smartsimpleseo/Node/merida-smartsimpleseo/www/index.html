@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Benchmarks:
+
+H1 tags
+H2 tag
+H3 tag
+H4 tag
+Image ALT desc
+ANchor 
+Bold
+Italic
+Keyword title -->
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form>
+        <br> <br>
+
+        <label for="enterURL">Enter URL: </label>
+        <input id="enterURL" placeholder="your URL" />
+        <br> <br>
+
+        <input type="radio" id="compareToURL" name="typeComparison" value="competitorURL" />
+        <label for="compareToURL">Compare to known competitors</label><br>
+
+
+        <div id="knownURL">
+            <label for="enterCompetitor1URL">Enter Competitor 1 URL: </label>
+            <input id="enterCompetitor1URL" placeholder="Competitor URL" />
+            <br> <br>
+            <label for="enterCompetitor2URL">Enter Competitor 2 URL: </label>
+            <input id="enterCompetitor2URL" placeholder="Competitor URL" />
+            <br> <br>
+        </div>
+
+        <input type="radio" id="compareToGoogle" name="typeComparison" value="googleResultPage" />
+        <label for="compareToGoogle">Compare to Google Search Results</label><br><br>
+
+        <div id="googleResults">
+            <label for="enterLocation">Enter Location: </label>
+            <input id="enterLocation" placeholder="Please enter a city name" />
+            <br> <br>
+
+            <label for="enterKeyword">Enter Keyword: </label>
+            <input id="enterKeyword" placeholder="Enter One keyword please" />
+            <br> <br>
+        </div>
+
+        <button id="compare">Compare</button>
+    
+    <br> <br> <br> <br>
+
+    </form>
+
+    <div id="results"></div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
